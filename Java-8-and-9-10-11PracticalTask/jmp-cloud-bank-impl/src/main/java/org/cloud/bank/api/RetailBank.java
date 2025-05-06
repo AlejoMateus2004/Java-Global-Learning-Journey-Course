@@ -1,20 +1,33 @@
 package org.cloud.bank.api;
 
 
-import org.dto.api.domain.BankCard;
-import org.dto.api.domain.User;
+import org.bank.api.Bank;
+import org.bank.api.BankCardFactory;
+import org.dto.api.domain.*;
 
-public class RetailBank {
+import java.util.HashMap;
+import java.util.Map;
 
-    public static class CreditBankCard extends BankCard {
-        public CreditBankCard(String number, User user) {
-            super(number, user);
-        }
+import static org.cloud.bank.api.BankUtil.generateCardNumber;
+
+public class RetailBank implements Bank {
+    private static final Map<BankCardType, BankCardFactory> cardFactoryMap = new HashMap<>();
+
+    static {
+        cardFactoryMap.put(BankCardType.CREDIT, CreditBankCard::new);
+        cardFactoryMap.put(BankCardType.DEBIT, DebitBankCard::new);
     }
 
-    public static class DebitBankCard extends BankCard {
-        public DebitBankCard(String number, User user) {
-            super(number, user);
+    @Override
+    public BankCard createBankCard(User user, BankCardType cardType) {
+        System.out.println("Service invoked in RetailBank");
+        BankCardFactory bankCardFactory = cardFactoryMap.get(cardType);
+        String cardNumber = generateCardNumber();
+
+        if (bankCardFactory != null) {
+            return bankCardFactory.create(cardNumber, user);
         }
+        throw new IllegalArgumentException("Unknown BankCardType: " + cardType);
     }
+
 }
