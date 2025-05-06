@@ -11,6 +11,8 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 public class BankServiceImpl implements BankService {
 
@@ -46,4 +48,10 @@ public class BankServiceImpl implements BankService {
         return users;
     }
 
+    @Override
+    public List<Subscription> getAllSubscriptionsByCondition(Predicate<Subscription> predicate) {
+        return subscriptions.stream()
+                .filter(predicate)
+                .collect(Collectors.toUnmodifiableList());
+    }
 }
