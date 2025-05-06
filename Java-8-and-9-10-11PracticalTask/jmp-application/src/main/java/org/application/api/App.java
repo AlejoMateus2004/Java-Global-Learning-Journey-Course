@@ -19,6 +19,7 @@ public class App
     {
         ServiceLoader<Bank> bankLoader = ServiceLoader.load(Bank.class);
         Bank bank = bankLoader.findFirst().orElseThrow();
+        System.out.println("Bank Implementation: " + bank.getClass().getSimpleName());
 
         ServiceLoader<BankService> serviceLoader = ServiceLoader.load(BankService.class);
         BankService service = serviceLoader.findFirst().orElseThrow();
