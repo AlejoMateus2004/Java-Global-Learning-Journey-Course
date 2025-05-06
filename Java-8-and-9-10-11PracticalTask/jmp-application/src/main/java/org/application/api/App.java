@@ -29,8 +29,11 @@ public class App
         user.setSurname("Doe");
         user.setBirthday(LocalDate.of(1980, 1, 1));
 
-        BankCard bankCard = bank.createBankCard(user, BankCardType.CREDIT);
-        service.subscribe(bankCard);
+        BankCard creditBankCard = bank.createBankCard(user, BankCardType.CREDIT);
+        service.subscribe(creditBankCard);
+
+        BankCard debitBankCard = bank.createBankCard(user, BankCardType.CREDIT);
+        service.subscribe(debitBankCard);
 
         System.out.println("Users subscribed: ");
         service.getAllUsers().forEach(System.out::println);
@@ -42,8 +45,8 @@ public class App
         System.out.println("Subscriptions started today:");
         service.getAllSubscriptionsByCondition(s -> s.getStartDate().equals(LocalDate.now())).forEach(System.out::println);
 
-        System.out.println("Subscriptions by card number:");
-        service.getSubscriptionByBankCardNumber(bankCard.getNumber()).ifPresentOrElse(
+        System.out.println("Subscriptions by credit card number:");
+        service.getSubscriptionByBankCardNumber(creditBankCard.getNumber()).ifPresentOrElse(
                 subscription -> System.out.println("Subscription found: " + subscription),
                 () -> System.out.println("Subscription not found")
         );
