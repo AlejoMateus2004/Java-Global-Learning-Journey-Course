@@ -1,0 +1,18 @@
+Index: Java-8-and-9-10-11PracticalTask/jmp-cloud-bank-impl/src/main/java/module-info.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>module jmp.cloud.bank.impl {\n    requires transitive jmp.bank.api;\n    requires jmp.dto;\n    provides org.bank.api.Bank with\n            org.cloud.bank.api.InvestmentBank,\n            org.cloud.bank.api.CentralBank,\n            org.cloud.bank.api.RetailBank;\n\n    exports org.cloud.bank.api;\n}
+===================================================================
+diff --git a/Java-8-and-9-10-11PracticalTask/jmp-cloud-bank-impl/src/main/java/module-info.java b/Java-8-and-9-10-11PracticalTask/jmp-cloud-bank-impl/src/main/java/module-info.java
+--- a/Java-8-and-9-10-11PracticalTask/jmp-cloud-bank-impl/src/main/java/module-info.java	(revision f2e1a9f862db4178b685bc08c675837f0dbd8ac2)
++++ b/Java-8-and-9-10-11PracticalTask/jmp-cloud-bank-impl/src/main/java/module-info.java	(date 1746560956982)
+@@ -2,8 +2,8 @@
+     requires transitive jmp.bank.api;
+     requires jmp.dto;
+     provides org.bank.api.Bank with
+-            org.cloud.bank.api.InvestmentBank,
+             org.cloud.bank.api.CentralBank,
++            org.cloud.bank.api.InvestmentBank,
+             org.cloud.bank.api.RetailBank;
+ 
+     exports org.cloud.bank.api;
