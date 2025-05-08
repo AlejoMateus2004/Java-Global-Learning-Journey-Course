@@ -10,6 +10,7 @@ import org.service.api.SubscriptionNotFoundException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
@@ -38,7 +39,7 @@ public class BankServiceImpl implements BankService {
     @Override
     public Optional<Subscription> getSubscriptionByBankCardNumber(String bankcardNumber) {
         return Optional.ofNullable(subscriptions.stream()
-                .filter(subscription -> subscription.getBankcardNumber().equals(bankcardNumber))
+                .filter(subscription -> Objects.equals(subscription.getBankcardNumber(),bankcardNumber))
                 .findFirst()
                 .orElseThrow(() -> new SubscriptionNotFoundException("Subscription not found for bankcard number: " + bankcardNumber)));
     }
