@@ -11,7 +11,7 @@ public class InvestmentBank implements Bank {
 
     @Override
     public BankCard createBankCard(User user, BankCardType cardType) {
-        System.out.println("Service invoked in InvestmentBank");
+        System.out.println("Service invoked in InvestmentBank with card type: " + cardType);
         BankCardFactory bankCardFactory =BankUtil.getBanCardFactoryMap().get(cardType);
         String cardNumber = generateCardNumber();
 

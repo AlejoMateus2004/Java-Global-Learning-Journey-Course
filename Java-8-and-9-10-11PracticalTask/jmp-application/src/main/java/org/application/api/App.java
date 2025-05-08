@@ -32,7 +32,7 @@ public class App
         BankCard creditBankCard = bank.createBankCard(user, BankCardType.CREDIT);
         service.subscribe(creditBankCard);
 
-        BankCard debitBankCard = bank.createBankCard(user, BankCardType.CREDIT);
+        BankCard debitBankCard = bank.createBankCard(user, BankCardType.DEBIT);
         service.subscribe(debitBankCard);
 
         System.out.println("Users subscribed: ");
