@@ -33,10 +33,10 @@
 - **ThreadSafeMap**: Time: 9 ms
 
 ### Observations
-- **Concurrent Execution**: `ConcurrentHashMap` muestra un rendimiento superior en Java 11 y Java 15 comparado con Java 8.
-- **Synchronized Execution**: Aunque el `ConcurrentHashMap` muestra un rendimiento inferior en Java 8, muestra mejoras en versiones más modernas.
-- **Overall**: `Collections.synchronizedMap` y `ThreadSafeMap` ofrecen sincronización explícita y rendimientos más consistentes, pero con mayor potencial de contención en situaciones concurrentes.
+- **Concurrent Execution**: `ConcurrentHashMap` shows superior performance in Java 11 and Java 15 compared to Java 8.
+- **Synchronized Execution**: Although `ConcurrentHashMap` shows lower performance in Java 8, it shows improvements in newer versions.
+- **Overall**: `Collections.synchronizedMap` and `ThreadSafeMap` offer explicit synchronization and more consistent performance, but with greater potential for contention in concurrent situations.
 
 ### Conclusion
-- **Optimized Concurrent Usage**: Para escenarios de uso concurrente, `ConcurrentHashMap` es la elección preferida en Java 11 y Java 15, debido a sus mecánicas avanzadas y reducción de contención.
-- **Educational Value of Custom Implementation**: La implementación personalizada (`ThreadSafeMap`) sirve para fines educativos pero no puede igualar el rendimiento de `ConcurrentHashMap` en situaciones concurrentes.
+- **Optimized Concurrent Usage**: For concurrent usage scenarios, `ConcurrentHashMap` is the preferred choice in Java 11 and Java 15, due to its advanced mechanics and reduced contention.
+- **Educational Value of Custom Implementation**: The custom implementation (`ThreadSafeMap`) is suitable for educational purposes but cannot match the performance of `ConcurrentHashMap` in concurrent situations.
