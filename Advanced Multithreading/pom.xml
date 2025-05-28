@@ -12,6 +12,7 @@
   <modules>
     <module>Task 2 - Multithreading Sorting via FJP</module>
     <module>Task 3 - File Scanner via FJP</module>
+    <module>Task 4 - Completable Future</module>
   </modules>
 
   <properties>
