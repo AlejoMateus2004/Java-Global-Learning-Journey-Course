@@ -10,6 +10,8 @@ import java.util.concurrent.atomic.AtomicBoolean;
  */
 public class App 
 {
+    //Run command mvn clean package
+    //Then run the jar file with the command: java /target/task3-1.0-SNAPSHOT.jar /path/to/folder
     public static void main(String[] args) {
         if (args.length != 1) {
             System.err.println("Usage: java FolderScanner <folder_path>");
