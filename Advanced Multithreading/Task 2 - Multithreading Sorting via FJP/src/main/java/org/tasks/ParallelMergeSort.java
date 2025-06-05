@@ -6,7 +6,11 @@ import java.util.concurrent.RecursiveAction;
 public class ParallelMergeSort {
     public static void parallelMergeSort(int[] array, int threshold) {
         ForkJoinPool pool = new ForkJoinPool();
-        pool.invoke(new SortTask(array, new int[array.length], 0, array.length - 1, threshold));
+        try {
+            pool.invoke(new SortTask(array, new int[array.length], 0, array.length - 1, threshold));
+        } finally {
+            pool.shutdown();
+        }
     }
 
     private static class SortTask extends RecursiveAction {
