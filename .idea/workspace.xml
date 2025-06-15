@@ -13,7 +13,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -24,12 +24,12 @@
     &quot;assignee&quot;: &quot;AlejoMateus2004&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/AlejoMateus2004/Java-8-and-9-10-11-Module-Practical-Task.git&quot;,
-    &quot;accountId&quot;: &quot;471cda4c-46ba-4dd0-a719-493d28e9719b&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/AlejoMateus2004/Java-Global-Learning-Journey-Course.git",
+    "accountId": "471cda4c-46ba-4dd0-a719-493d28e9719b"
   }
-}</component>
+}]]></component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
@@ -45,6 +45,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "feat/Micro-services-Module-Practical-Task",
     "last_opened_file_path": "/home/alejandro_mateus/Documents/Java-Global-Learning-Journey-Course",
     "settings.editor.selected.configurable": "vcs.Git"
   }
