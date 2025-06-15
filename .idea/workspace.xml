@@ -5,14 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f7dd92b-6112-44b4-a1c4-cb5401034205" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Advanced Multithreading/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Advanced Multithreading/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Advanced Multithreading/Task 2 - Multithreading Sorting via FJP/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Advanced Multithreading/Task 2 - Multithreading Sorting via FJP/src/main/java/org/tasks/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Advanced Multithreading/Task 2 - Multithreading Sorting via FJP/src/test/java/org/tasks/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Advanced Multithreading/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Advanced Multithreading/src/main/java/org/tasks/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Advanced Multithreading/src/test/java/org/tasks/AppTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +15,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feat/Advanced-Multithreading-Practical-Task" />
+        <entry key="$PROJECT_DIR$" value="dev5" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,8 +47,8 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "dev",
-    "last_opened_file_path": "/home/alejandro_mateus/Documents/Java-Global-Learning-Journey-Course2/Advanced Multithreading",
+    "git-widget-placeholder": "dev4",
+    "last_opened_file_path": "/home/alejandro_mateus/Documents/Java-Global-Learning-Journey-Course2/Advanced Multithreading/Task 5 Producer and consumers",
     "settings.editor.selected.configurable": "vcs.Git"
   }
 }]]></component>
@@ -162,7 +154,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="dev" />
+                        <option value="dev4" />
                       </list>
                     </value>
                   </entry>
